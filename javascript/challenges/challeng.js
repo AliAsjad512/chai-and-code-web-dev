@@ -19,10 +19,14 @@ AddTea.push('Chmomile Tea')
 
 //Problem: Remove "Green Tea " from the list of teas
 
-let eliminateTea =  ['Bubble Tea','Kung fu Tea', 'Green tea'];
+let eliminateTea =  ['Bubble Tea','Kung fu Tea', 'Green tea','White tea'];
 
-eliminateTea.pop('Green tea');
-//console.log(eliminateTea)
+const index = eliminateTea.indexOf('Green tea');
+if(index > -1){
+    eliminateTea.splice(index,2);
+}
+
+console.log(eliminateTea)
 
 
 // Problem: Filter the list to only include teas that are caffeinated
@@ -87,4 +91,4 @@ for(let i=0;i<FindWordLength.length;i++){
    }
 
 }
-console.log(word);
+//console.log(word);
